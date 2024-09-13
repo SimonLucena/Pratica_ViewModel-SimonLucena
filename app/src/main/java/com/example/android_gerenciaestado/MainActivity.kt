@@ -43,7 +43,7 @@ class MainActivity : ComponentActivity() {
                         val contador by viewModel.contador.collectAsState()
                         ContadorStateless(
                             contador,
-                            onIncrementContador = {viewModel.incrementar()},
+                            onIncrementContador = { viewModel.incrementar() },
                             onDecrementoContador = { viewModel.decremento() },
                             modifier = Modifier.padding(innerPadding)
                         )
